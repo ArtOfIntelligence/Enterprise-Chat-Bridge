@@ -27,7 +27,7 @@ This is how it fits in your solution:
 
   
 
-![Simple Architecture](./imgs/simple.svg)
+![Simple Architecture](./imgs/simple-arch.svg)
 
   
 

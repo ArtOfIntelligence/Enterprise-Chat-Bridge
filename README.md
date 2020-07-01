@@ -6,7 +6,9 @@ Protocols: REST API and WebSockets.
 
 This is how it fits in your solution:
 
-[![Sauce Test Status](imgs/simple.svg)](https://saucelabs.com/u/socket)
+<!-- ![Simple Architecture](imgs/simple.svg) -->
+<img src="imgs/simple.svg">
+
 
 ## Cross-browser
 

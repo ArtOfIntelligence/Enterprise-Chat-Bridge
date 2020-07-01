@@ -6,8 +6,8 @@ Protocols: REST API and WebSockets.
 
 This is how it fits in your solution:
 
-<!-- ![Simple Architecture](imgs/simple.svg) -->
-<img src="imgs/simple.svg">
+![Simple Architecture](./imgs/simple.svg)
+<img src="./imgs/simple.svg">
 
 
 ## Cross-browser

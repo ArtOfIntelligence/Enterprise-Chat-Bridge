@@ -87,7 +87,7 @@ Depending on how far you are in building your solution, integrating ECB should t
 3. **Web Client:** Embed ECB client in your web application
 
 ### 1. ECB
-[ECB Setup Documentation](aaaa)
+[ECB Setup Documentation](ECB-SETUP-GUIDE.md)
 ...
  
 ##  Usage Scenarios 

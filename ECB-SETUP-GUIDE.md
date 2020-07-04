@@ -28,17 +28,59 @@ The following binaries are available:
 - Windows 10 - x64 ([Download](link...))
 - Windows 10 - x32 ([Download](link...))
 
-Create a folder and extract the archive file to it.
+Create a folder and extract the archive file to it. We will refer to this folder as `<ECB folder>`.
   
 ## 1.3 Activation <a id="1-3"></a>
 ### Create activation key & request serial key
-1. Open a CLI to the folder, and run **ECB** 
-2. Provide your legal organization's name
+1. Open a CLI to the `<ECB folder>` folder, and run **ECB** 
+2. Provide your legal organization name
+3. The activation file `activation.key` will be generated, send it to connect@artofintel.com 
+4. Our team will send you a `serial.key`, place it in `<ECB folder>` folder 
+ 
 
 
 ## 1.4 Key Pair <a id="1-4"></a>
 ### Create a new RS256 public/private key pair
+
+You need to generate a new pair of RS256 keys.
+- **Private Key (secret):** Stored and used by your backend server
+- **Public Key:** Stored and used by both **ECB** and your web client
+
+> Read more about [Understanding ECB security](ECB-SECURITY.md) 
+#### Windows
+1. Navigate to `<ECB folder>/openssl/` folder
+2. Generate the **private key (secret)**: 
+`openssl genrsa -out private.key 2048`
+3. Generate the **public key**:
+`openssl rsa -in private.key -pubout -out public.key`
+4. Move `public.key` to `<ECB folder>`
+
+>  **IMPORTANT:**
+> Move `private.key` to a secure location, we will use it in step 2 [(Implement your ECB backend server)](link...)
+
 ## 1.5 Configure <a id="1-5"></a>
 ### Configure ECB's settings (port, backend, etc...)
+Open a CLI to the `<ECB folder>` folder, run **ECB**, and configure the following:
+ 
+#### 1. ECB Port Number
+This is the TCP port you will expose on ECB's server, web clients will connect to it.
+ 
+ #### 2. Backend Url
+ This is your backend server's base url, **ECB** will communicate with your REST API resources exposed over this url.
+ 
+ #### 3. Block non-thread members requests
+ When a thread is retrieved from your server, your server lists all thread participants (members) inside the thread's token.
+   
+ Then when a user tries to send a new message to an existing thread, or retrieve and existing **ECB** can block this request if this setting is set to **true** *(default)*. 
+
+Alternatively, you may want to receive the request and handle it on your server. In this case, set this to **false**
+
+> This is useful if you want a non-thread member to **join** an existing thread, such as in a customer support scenario.    	
+ 
+
 ## 1.6 Start <a id="1-6"></a>
 ### Start ECB and configure your OS to start it automatically
+
+That's it, your **ECB** service is ready. 
+
+To insure service availability, you need to configure **ECB's** host server to start the service automatically.  

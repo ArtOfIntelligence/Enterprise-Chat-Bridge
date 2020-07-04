@@ -1,5 +1,6 @@
 
-#  Enterprise Chat Bridge (ECB) - <em>Introduction</em>
+## Enterprise Chat Bridge (ECB) 
+# Introduction
 - ECB is a middleware chat engine with **Push** to clients 
 - ECB is server **agnostic**, meaning that it can be deployed on any server/OS that runs <ins>Node.js</ins>
 - ECB is highly **customizable** and can fit any chat scenario you need

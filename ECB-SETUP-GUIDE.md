@@ -1,5 +1,6 @@
 
-#  Enterprise Chat Bridge (ECB) - <em>Setup Guide</em>
+## Enterprise Chat Bridge (ECB)
+# Setup Guide 
 
 This document guides you through the process of setting ECB on your server, which is the first step in implementing ECB.
 
@@ -7,7 +8,7 @@ This document guides you through the process of setting ECB on your server, whic
 - [ ]  **2. Beckend Server:** Implement your ECB backend server
 - [ ]  **3. Web Client:** Embed ECB client in your web application
 
-You need to familiarize yourself with ECB through the [introduction document](URLLL) first if you haven't already ;) 
+You need to familiarize yourself with ECB through the [introduction document](README.md) first if you haven't already ;) 
 
 ## Checklist
 - [ ]  [**1.1 Node.js:** Download & Setup Node.js on your server](#1-1)

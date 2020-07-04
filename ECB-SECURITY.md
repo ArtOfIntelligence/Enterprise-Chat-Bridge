@@ -1,4 +1,6 @@
-#  Enterprise Chat Bridge (ECB) - <em>Understanding Security</em>
+## Enterprise Chat Bridge (ECB) 
+# Understanding Security
+
 **ECB** is stateless; it identifies users and message threads using JWTs (JSON Web Tokens).  
 
 To achieve this, your server <ins>signs</ins> tokens identifying users and threads before sending them to **ECB**, which in turn forwards them to your web clients. 
